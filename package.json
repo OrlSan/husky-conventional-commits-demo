@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "husky install",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "release:major": "standard-version --release-as major"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +16,7 @@
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
-    "husky": "^5.0.9"
+    "husky": "^5.0.9",
+    "standard-version": "^9.1.0"
   }
 }
